@@ -1,0 +1,18 @@
+html
+  head
+    title Restaurants
+  body
+    include ./header
+
+    div
+      h1 Restaurants
+
+      each restaurant in allResJSONData
+        h3 
+          ul
+            li  
+              a(href="/restaurants/" + restaurant.id) #{restaurant.name}
+              
+
+          
+            

@@ -1,0 +1,38 @@
+html
+  head
+    title= restaurant.name
+  body
+
+    script.
+      const restaurant = !{JSON.stringify(restaurant)};
+    script(src="/js/restaurant.js" defer)
+
+    include ./header
+
+    h1= restaurant.name
+              
+    div 
+      label Name: 
+      input(type="text" id="name" name="name" value=restaurant.name)
+      br
+      br
+      label Minimum Order: $ 
+      input(type="number" step="any" id="minOrder" name="min_order" value=Number(restaurant.min_order).toFixed(2))
+      br
+      br
+      label Delivery Fee: $ 
+      input(type="number" step="any" id="deliveryFee" name="delivery_fee" value=Number(restaurant.delivery_fee).toFixed(2))
+      br
+      h3 Menu
+      div#menu
+        select(name='categories' id='categories')
+          option(value="Select a category") Select a category
+          each category in Object.keys(restaurant.menu)
+            option(value=category)= category
+          option(value="Add a category") Add a category
+        br
+        br
+      div#items
+      br
+      br
+      button(id="save") Save

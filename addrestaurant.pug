@@ -1,0 +1,25 @@
+html
+  head
+    title Add Restaurant
+  body
+
+    script(src="/js/addRestaurant.js" defer)
+    include ./header
+    div 
+        h1 Add a Restaurant
+
+        label Restaurant Name: 
+        input(type="text" id="name" name="name")
+        br
+        br
+        label Delivery Fee: $ 
+        input(type="number" step="any" id="deliveryFee" name="deliveryFee")
+        br
+        br
+        label Minimum Order: $ 
+        input(type="number" step="any" id="minOrder" name="minOrder")
+
+
+        br
+        br
+        button(id="save") Save
