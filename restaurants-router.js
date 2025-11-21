@@ -1,9 +1,4 @@
-/*
 
-  Student Name: Maram Sayed
-  Student #: 101304334
-
-*/
 
 const express = require("express");
 const fs = require("fs");
