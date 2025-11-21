@@ -1,9 +1,4 @@
-/*
 
-  Student Name: Maram Sayed
-  Student #: 101304334
-
-*/
 
 // when page loads
 document.addEventListener("DOMContentLoaded", () => {
