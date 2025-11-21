@@ -1,7 +1,5 @@
-COMP 2406 - Assignment 3
-
-Name: Maram Sayed
-Student #: 101304334
+Description:
+A wepbage that displays restaurant information, and allows for altertations/additions to that information
 
 Files:
 server.js
@@ -21,9 +19,6 @@ public
         addRestaurant.js
         restaurant.js
 
-
-Design Choices:
-I decided to make script files for javascript functionality to keep the corresponding pug files cleaner.
 
 To run the server file, follow these steps:
 1. enter "npm init"
